@@ -10,6 +10,18 @@
 A simple singly linked list written in [Go](https://golang.org). This is
 often a common interview question and one worth practicing and understanding.
 
+To build run `make`.
+
+```#!bash
+$ go get -u github.com/prologic/go-linkedlist
+$ cd $GOPATH/github.com/prologic/go-linkedlist
+$ make
+```
+
+To run the tests run `make test`
+
+Travis CI and Codecov are also integreated.
+
 ## Basics
 
 The basics of a singly linked list is simple A `List` is an object that
