@@ -7,7 +7,7 @@ deps:
 	@go get ./...
 
 build:
-	@go build .
+	@go build -o linkedlist ./cmd/linkedlist/main.go
 
 test:
 	@go test -v -cover -coverprofile=coverage.txt -covermode=atomic .
