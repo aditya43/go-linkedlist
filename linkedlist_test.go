@@ -23,6 +23,15 @@ func TestValue(t *testing.T) {
 	}
 }
 
+func TestNode(t *testing.T) {
+	v, _ := NewValue(1)
+	n := &Node{value: v}
+	s := n.String()
+	if s != "1" {
+		t.Errorf("[n.String()]: expecting n to be 1 but got %s", s)
+	}
+}
+
 func TestUnsupportedValue(t *testing.T) {
 	_, err := NewValue(3.14)
 	if err == nil {
