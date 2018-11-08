@@ -12,6 +12,24 @@ func TestEmptyList(t *testing.T) {
 	}
 }
 
+func TestValue(t *testing.T) {
+	v, err := NewValue(1)
+	if err != nil {
+		t.Errorf("[NewValue(1)]: unexpected error: %s", err)
+	}
+	s := v.String()
+	if s != "1" {
+		t.Errorf("[v.String()]: expecting v to be 1 but got %s", s)
+	}
+}
+
+func TestUnsupportedValue(t *testing.T) {
+	_, err := NewValue(3.14)
+	if err == nil {
+		t.Errorf("[NewValue(3.14): unexpected non-error: %s", err)
+	}
+}
+
 func TestAppend(t *testing.T) {
 	xs := List{}
 	xs.Append(1)
@@ -20,6 +38,14 @@ func TestAppend(t *testing.T) {
 	s := xs.String()
 	if s != "[3, 2, 1]" {
 		t.Errorf("expected list to be [3, 2, 1] but got %s", s)
+	}
+}
+
+func TestAppendUnsupportedValue(t *testing.T) {
+	xs := List{}
+	err := xs.Append(3.13)
+	if err == nil {
+		t.Errorf("[NewValue(3.14): unexpected non-error: %s", err)
 	}
 }
 
