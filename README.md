@@ -1,10 +1,10 @@
 # go-linkedlist
 
-[![Build Status](https://travis-ci.org/prologic/go-linkedlist.svg?branch=master)](https://travis-ci.org/prologic/go-linkedlist)
+[![Build Status](https://cloud.drone.io/api/badges/prologic/go-linkedlist/status.svg)](https://cloud.drone.io/prologic/go-linkedlist)
 [![CodeCov](https://codecov.io/gh/prologic/go-linkedlist/branch/master/graph/badge.svg)](https://codecov.io/gh/prologic/go-linkedlist)
 [![Go Report Card](https://goreportcard.com/badge/prologic/go-linkedlist)](https://goreportcard.com/report/prologic/go-linkedlist)
 [![GoDoc](https://godoc.org/github.com/prologic/go-linkedlist?status.svg)](https://godoc.org/github.com/prologic/go-linkedlist) 
-[![](https://images.microbadger.com/badges/image/prologic/go-linkedlist.svg)](https://microbadger.com/images/prologic/go-linkedlist "Get your own image badge on microbadger.com")
+[![Sourcegraph](https://sourcegraph.com/github.com/prologic/go-linkedlist/-/badge.svg)](https://sourcegraph.com/github.com/prologic/go-linkedlist?badge)
 
 
 A simple singly linked list written in [Go](https://golang.org). This is

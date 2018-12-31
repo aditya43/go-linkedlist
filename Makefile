@@ -13,4 +13,4 @@ test:
 	@go test -v -cover -coverprofile=coverage.txt -covermode=atomic .
 
 clean:
-	@rm -rf linkedlist
+	@git clean -f -d -X
